@@ -5,7 +5,6 @@ import { HousingLocation } from './housinglocation';
   providedIn: 'root'
 })
 export class HousingService {
-  readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
   
   url = 'http://localhost:3000/locations';
 
@@ -15,8 +14,13 @@ export class HousingService {
     return await data.json() ?? [];
   }
   
-  getHousingLocationById(id: number): HousingLocation | undefined {
-    return this.housingLocationList.find(housingLocation => housingLocation.id === id);
+  async getHousingLocationById(id: number): Promise<HousingLocation | undefined> {
+    const data = await fetch(`${this.url}/${this.id}`);
+    return await data.json() ?? {};
   }
-  constructor() { }
+  
+  submitApplication(firstName: string, lastName: string, email: string)
+  {
+    console.log(`First: ${firstName}, Last: ${lastName}, Email: ${email}`);
+  }
 }
