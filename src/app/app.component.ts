@@ -6,7 +6,7 @@ import { HomeComponent } from './home/home.component';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HomeComponent, RouterModule],
-  styleUrl: './app.component.scss',
+  styleUrl: './app.component.css',
   template: `
   <main>
     <a [routerLink]="['/']">

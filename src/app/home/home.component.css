@@ -1,3 +1,7 @@
+.brand-name {
+  background-color: rgb(232, 195, 245);
+}
+
 .results {
     display: grid;
     column-gap: 14px;
