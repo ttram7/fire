@@ -19,9 +19,9 @@ import { HousingLocation } from '../housinglocation';
     <section class="listing-features">
       <h2 class="section-heading">Quick Flame</h2>
       <ul>
-        <li>Units available: {{housingLocation?.availableUnits}}</li>
-        <li>Does this location have wifi: {{housingLocation?.wifi}}</li>
-        <li>Does this location have laundry: {{housingLocation?.laundry}}</li>
+        <li>Average Cost of Living: {{housingLocation?.availableUnits}}</li>
+        <li>Healthcare Quality: {{housingLocation?.wifi}}</li>
+        <li>Population: {{housingLocation?.laundry}}</li>
       </ul>
     </section>
   </article>
