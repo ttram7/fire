@@ -13,7 +13,7 @@ import { HomeComponent } from './home/home.component';
       <header class="brand-name">
         <!-- <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true"> -->
         <h1 class="brand-logo">🔥 F.I.R.E. App 🔥</h1>
-        <h2>Financial Independence, Retire Early</h2>
+        <h2 class="brand-logo">Financial Independence, Retire Early</h2>
       </header>
     </a>  
     <section class="content">

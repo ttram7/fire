@@ -1,5 +1,12 @@
+:host {
+  --content-padding: 10px;
+}
+
 .brand-name {
   background-color: rgb(232, 195, 245);
+  display: block;
+  padding: var(--content-padding);
+  box-shadow: 0px 5px 25px var(--shadow-color);
 }
 
 .results {
