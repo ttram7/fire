@@ -16,6 +16,7 @@ import { HousingService } from '../housing.service';
       <button class="primary" type="button"
       (click)="filterResults(filter.value)">Search</button>
     </form>
+    <button class="primary" type="button">Price</button>
   </section>
   <section class="results">
     
