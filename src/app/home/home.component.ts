@@ -16,7 +16,20 @@ import { HousingService } from '../housing.service';
       <button class="primary" type="button"
       (click)="filterResults(filter.value)">Search</button>
     </form>
-    <button class="primary" type="button">Price</button>
+    <button class="primary" type="button" (click)="showPriceRange()">Price</button>
+    <ng-container *ngIf="visible">
+      <div class="box">
+        <div class="price-range">
+          <div class="min-price">
+          <p>Min</p><input type="number">
+          </div>
+          <div class="max-price">
+            <p>Max</p><input type="number">
+          </div>
+        </div>
+        <button class="apply" type="button">Apply</button>
+      </div>
+    </ng-container>
   </section>
   <section class="results">
     
@@ -37,6 +50,11 @@ export class HomeComponent {
     this.housingLocationList = this.housingService.getAllHousingLocations();
     this.filteredLocationList = this.housingLocationList;
   }
+  //show price range box
+  displayBox:boolean = true
+  //hide price range box
+  visible:boolean = false
+
   filterResults(text: string) {
     if (!text) {
       this.filteredLocationList = this.housingLocationList;
@@ -48,9 +66,14 @@ export class HomeComponent {
         housingLocation?.city.toLowerCase().includes(text.toLowerCase())
     );
   }
+  //toggle price range box
+  showPriceRange() {
+     this.displayBox = !this.displayBox; //not equal to condition
+    this.visible = !this.visible
 }
 // housingLocation property of type HousingLocation to HomeComponent class
 // inject new service, that gets data from static array, into HomeComponent class
 // constructor is first function to run when component is created
 
 
+}
