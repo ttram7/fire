@@ -13,10 +13,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   template: `
   
   <article fxLayout= "row">
-  
   <main fxLayout= "column"fxFlex="80%">
-    
-  <h2 class="item item-1" class="listing-heading">{{housingLocation?.name}}</h2>
+    <h2 class="item item-1" class="listing-heading">{{housingLocation?.name}}</h2>
     <img class="item item-2" class="listing-photo" [src]="housingLocation?.photo"
       alt="Exterior photo of {{housingLocation?.name}}"/>
     <section class="listing-description">
@@ -24,19 +22,17 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     </section>
     <section class="item item-3 listing-features" fxFlex="25%" >
       <div>
-      <h2 fxLayoutAlign="center center" class="section-heading">Quick Flame</h2>
+        <h2 fxLayoutAlign="center center" class="section-heading">Quick View</h2>
       </div>
       <div> 
-      <ul fxLayout= "row" fxLayoutAlign="space-between">
-        <li class="item item-1" >Average Cost of Living: {{housingLocation?.availableUnits}}</li>
-        <li class="item item-2">Healthcare Quality: {{housingLocation?.wifi}}</li>
-        <li class="item item-3">Population: {{housingLocation?.laundry}}</li>
-      </ul>
-</div>
- </section>
-</main>
-
-
+        <ul fxLayout= "row" fxLayoutAlign="space-between">
+          <li class="item item-1" >Average Cost of Living: \${{housingLocation?.col}} per month</li>
+          <li class="item item-2">Healthcare Quality: {{housingLocation?.wifi}}</li>
+          <li class="item item-3">Population: {{housingLocation?.population}}</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
  <aside class="item item-1" fxFlex="20%">
   <h2> Friendly Fire Grade </h2>

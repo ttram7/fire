@@ -8,4 +8,5 @@ export interface HousingLocation {
     wifi: boolean;
     laundry: boolean;
     col: number;
+    population: string;
 }
