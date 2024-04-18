@@ -1,5 +1,5 @@
 # FIRE Application
-This application is being developed for the FIRE Movement (Financial Independence, Retire Early). FIRE is a movement for people who want to retire earlier than the traditional age of 65, by heavy investing and saving money.
+This application is being developed for the FIRE Movement (Financial Independence, Retire Early). FIRE is a movement for people who want to retire earlier than the traditional age of 65, by saving money through heavily investing.
 
 End users for this FIRE application include:
 - Retired Individuals who have already achieved financial independence and are looking to move to their ideal location.
