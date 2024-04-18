@@ -1,10 +1,21 @@
-# FirstAngularApp
+# FIRE Application
+This application is being developed for the FIRE Movement (Financial Independence, Retire Early). FIRE is a movement for people who want to retire earlier than the traditional age of 65, by heavy investing and saving money.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+End users for this FIRE application include:
+- Retired Individuals who have already achieved financial independence and are looking to move to their ideal location.
+- Non Retired individuals who are planning for a financially independent future and would like to prepare their finances to accommodate their preferred living location.
+
+## FirstAngularApp
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2. 
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Database
+
+This code repository features a `db.json` file which has some starter code. As we migrate to MongoDB, this will change. To run the FIRE application locally, start the database with command `json-server db.json` or `npx json-server --watch db.json` if you do not have packages installed globally.
 
 ## Code scaffolding
 
