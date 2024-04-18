@@ -4,11 +4,8 @@
 
 .brand-name {
   background-color: rgb(232, 195, 245);
-  display: block;
   padding: var(--content-padding);
   box-shadow: 0px 5px 25px var(--shadow-color);
-  display: flex;
-  align-items: flex-start;
 }
   
 .apply {

@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
+import { AboutComponent } from './about/about.component';
 
 const routeConfig: Routes = [
     {
@@ -12,6 +13,11 @@ const routeConfig: Routes = [
       path: 'details/:id',
       component: DetailsComponent,
       title: 'Location details'
+    },
+    {
+      path: 'about',
+      component: AboutComponent,
+      title: 'About FIRE'
     }
   ];
   
