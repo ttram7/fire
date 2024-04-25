@@ -6,14 +6,30 @@ import { HomeComponent } from './home/home.component';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HomeComponent, RouterModule],
-  styleUrl: './app.component.scss',
+  styleUrl: './app.component.css',
   template: `
   <main>
-    <a [routerLink]="['/']">
-      <header class="brand-name">
-        <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true">
-      </header>
-    </a>  
+    <header class="brand-name">
+      <a [routerLink]="['/']">
+        <!-- <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true"> -->
+        <h1 class="brand-logo">🔥 F.I.R.E. App 🔥</h1>
+        <h2 class="brand-logo">Financial Independence, Retire Early</h2>
+      </a>
+      <section class="nav-bar">
+        <a [routerLink]="['/about']">
+          <h3>About</h3>
+        </a>
+        <a [routerLink]="['/']">
+          <h3>FIRE Cities Ranked</h3>
+        </a>
+        <a [routerLink]="['/']">
+          <h3>Resources</h3>
+        </a>
+        <a [routerLink]="['/']">
+          <h3>Community</h3>
+        </a>
+      </section>
+    </header>
     <section class="content">
       <router-outlet></router-outlet>
     </section>
