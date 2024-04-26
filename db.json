@@ -1,4 +1,8 @@
 {
+  "research-references": {
+      "healthcareScoreUrl": "https://www.commonwealthfund.org/publications/scorecard/2023/jun/2023-scorecard-state-health-system-performance#6",
+      "placeholderText": "This will be data + details from the database TBD. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+  },
   "locations": [
     {
       "id": 0,
@@ -7,7 +11,7 @@
       "state": "IL",
       "photo": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2744&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "availableUnits": 4,
-      "wifi": true,
+      "healthcareScore": "ranked 23rd",
       "laundry": true,
       "col": 3000,
       "population": "2,697,000"
@@ -19,7 +23,7 @@
       "state": "CA",
       "photo": "https://images.unsplash.com/photo-1505887579242-c7bc04062e98?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "availableUnits": 0,
-      "wifi": false,
+      "healthcareScore": "ranked 14th",
       "laundry": true,
       "col": 4500,
       "population": "91,105"
@@ -31,7 +35,7 @@
       "state": "AK",
       "photo": "https://images.unsplash.com/photo-1631900183743-be3f34b6042b?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "availableUnits": 1,
-      "wifi": false,
+      "healthcareScore": "ranked 39th",
       "laundry": false,
       "col": 1200,
       "population": "31,973"
@@ -43,7 +47,7 @@
       "state": "WA",
       "photo": "https://images.unsplash.com/photo-1589481169991-40ee02888551?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "availableUnits": 1,
-      "wifi": true,
+      "healthcareScore": "ranked 7th",
       "laundry": false,
       "col": 4000,
       "population": "733,919"
@@ -55,7 +59,7 @@
       "state": "HI",
       "photo": "https://images.unsplash.com/photo-1573993228224-5ffd3f00511c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG9ub2x1bHV8ZW58MHx8MHx8fDA%3D",
       "availableUnits": 1,
-      "wifi": true,
+      "healthcareScore": "ranked 2nd",
       "laundry": false,
       "col": 5000,
       "population": "345,510"
@@ -67,7 +71,7 @@
       "state": "NY",
       "photo": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "availableUnits": 2,
-      "wifi": true,
+      "healthcareScore": "ranked 9th",
       "laundry": true,
       "col": 5200,
       "population": "8,468,000"
@@ -79,7 +83,7 @@
       "state": "NV",
       "photo": "https://images.unsplash.com/photo-1516975698824-571e2c952dbd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "availableUnits": 5,
-      "wifi": true,
+      "healthcareScore": "ranked 41st",
       "laundry": true,
       "col": 2200,
       "population": "646,790"
@@ -91,7 +95,7 @@
       "state": "GA",
       "photo": "https://images.unsplash.com/photo-1611106014123-092d7642f560?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "availableUnits": 2,
-      "wifi": true,
+      "healthcareScore": "ranked 45th",
       "laundry": true,
       "col": 2500,
       "population": "496,461"
@@ -103,7 +107,7 @@
       "state": "FL",
       "photo": "https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1pYW1pJTIwZmxvcmlkYXxlbnwwfHwwfHx8MA%3D%3D",
       "availableUnits": 10,
-      "wifi": false,
+      "healthcareScore": "ranked 36th",
       "laundry": false,
       "col": 3200,
       "population": "439,890"
