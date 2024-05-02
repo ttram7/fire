@@ -9,7 +9,7 @@ export class References {
   url = 'http://localhost:3000/research-references';
 
   //these functions allow dependencies to access service's data
-  async getAllResearchReferences(): Promise<ResearchReferences[]> {
+  async getAllResearchReferences(): Promise<ResearchReferences> {
     const data = await fetch(this.url);
     return await data.json() ?? [];
   }

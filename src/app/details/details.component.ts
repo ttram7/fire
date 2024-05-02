@@ -29,8 +29,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
           <ul fxLayout= "row" fxLayoutAlign="space-between">
             <li class="item item-1" >Average Cost of Living: \${{housingLocation?.col}} per month</li>
             <li class="item item-2">
-              Healthcare Quality: {{housingLocation?.healthcareScore}}
-              <!-- <a href="{researchReferences.healthcareScoreUrl}">Source</a> -->
+              Healthcare Quality: {{housingLocation?.healthcareScore}} nationwide
+              (<a href="{{researchReferences?.healthcareScoreUrl}}">Source</a>)
             </li>
             <li class="item item-3">Population: {{housingLocation?.population}}</li>
           </ul>
@@ -45,17 +45,18 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   <div fxLayout= "row">
     <section class="item item-1" fxFlex="90%"> 
       <h1 id="COL">Cost of Living</h1>
-      <!-- <p>{{researchReferences.placeholderText}}</p> -->
+      <p>{{researchReferences?.placeholderText}}</p>
       <h1>Public Transportation System</h1>
-      <!-- <p>{{researchReferences.placeholderText}}</p> -->
+      <p>{{researchReferences?.placeholderText}}</p>
       <h1>Healthcare Quality</h1>
-      <!-- <p>{{researchReferences.placeholderText}}</p> -->
+      <p>{{researchReferences?.placeholderText}}</p>
     </section>
     <aside class="item item-2">
-      <!-- Still figuring out routing here 3/20/24-->
+      <!--05/02/24: Content & Routing Not Implemented yet for COL, PTS, or HQ pages-->
       <p>Content</p>
       <ul> 
         <li>
+          <!-- this is just a sample route; not final destination -->
           <a [routerLink]="['/about']">Cost of Living</a>
         </li>
         <li>  
@@ -78,17 +79,17 @@ export class DetailsComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
   housingService: HousingService = inject(HousingService);
   references: References = inject(References);
-  researchReferences: ResearchReferences[] = [];
+  researchReferences: ResearchReferences | undefined;
   housingLocation: HousingLocation | undefined;
 
   constructor() {
     const housingLocationId = parseInt(this.route.snapshot.params['id'], 10);
 
-    this.housingService.getHousingLocationById(housingLocationId).then((housingLocation) => {
+    this.housingService.getHousingLocationById(`${housingLocationId}`).then((housingLocation) => {
       this.housingLocation = housingLocation;
     });
 
-    this.references.getAllResearchReferences().then((researchReferences: ResearchReferences[]) => {
+    this.references.getAllResearchReferences().then((researchReferences: ResearchReferences) => {
       this.researchReferences = researchReferences;
     })
   }
