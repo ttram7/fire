@@ -9,7 +9,11 @@ import { ActivatedRoute } from '@angular/router';
   template: `
   
   <main>
-    <h2> TEST </h2>
+    <h2> Financial Independence, Retire Early </h2>
+    <p>FIRE is a movement for people who want to retire 
+      earlier than the traditional age of 65, by saving 
+      money through heavily investing.
+    </p>
   </main>
   `,
   styleUrl: '../app.component.css'

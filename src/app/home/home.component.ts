@@ -55,7 +55,6 @@ export class HomeComponent {
       this.housingLocationList = housingLocationList;
       this.filteredLocationList = housingLocationList;
       this.filteredPriceList = housingLocationList;
-      
     });
   }
 
