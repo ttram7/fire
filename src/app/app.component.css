@@ -14,11 +14,15 @@ header {
 }
 
 .brand-name {
-  background-color: rgb(232, 195, 245);
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.brand-logo {
+  color: var(--ink-color);
 }
 
 a {

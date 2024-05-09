@@ -17,16 +17,16 @@ import { HomeComponent } from './home/home.component';
       </a>
       <section class="nav-bar">
         <a [routerLink]="['/about']">
-          <h3>About</h3>
+          <h3 class="brand-logo">About</h3>
         </a>
         <a [routerLink]="['/']">
-          <h3>FIRE Cities Ranked</h3>
+          <h3 class="brand-logo">FIRE Cities Ranked</h3>
         </a>
         <a [routerLink]="['/']">
-          <h3>Resources</h3>
+          <h3 class="brand-logo">Resources</h3>
         </a>
         <a [routerLink]="['/']">
-          <h3>Community</h3>
+          <h3 class="brand-logo">Community</h3>
         </a>
       </section>
     </header>
