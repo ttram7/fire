@@ -3,9 +3,26 @@
 }
 
 .brand-name {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding: var(--content-padding);
   box-shadow: 0px 5px 25px var(--shadow-color);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas: 
+    "city . price"
+    ". price-filter price-filter";
+}
+
+.city-filter {
+  grid-area: city;
+}
+
+.price-button {
+  grid-area: price;
+  max-width: fit-content;
+  justify-self: end;
+
 }
   
 .apply {
@@ -21,6 +38,7 @@
   margin: 10px;
   border: 1px solid var(--ink-color);
   border-radius: 8px;
+  grid-area: price-filter;
   display: flex;
   flex-direction: column;
 }
@@ -56,7 +74,7 @@ input[type="number"] {
 }
 
 button {
-  padding: 10px;
+  padding: var(--content-padding);
   border: solid 1px var(--primary-color);
   background: var(--button-color);
   color: var(--accent-color);

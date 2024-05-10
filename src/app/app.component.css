@@ -21,7 +21,7 @@ header {
 }
 
 .brand-logo {
-  color: var(--ink-color);
+  color: var(--accent-color);
   padding-top: 10px;
 }
 

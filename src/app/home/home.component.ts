@@ -11,12 +11,12 @@ import { HousingService } from '../housing.service';
   imports: [CommonModule, HousingLocationComponent],
   template: `
   <section class="brand-name">
-    <form>
+    <form class="city-filter">
       <input type="text" placeholder="Filter by city" #filter>
       <button class="primary" type="button"
       (click)="filterResults(filter.value)">Search</button>
     </form>
-    <button class="primary" type="button" (click)="showPriceRange()">Price</button>
+    <button class="primary price-button" type="button" (click)="showPriceRange()">Price</button>
     <ng-container *ngIf="visible">
       <div class="box">
         <div class="price-range">
