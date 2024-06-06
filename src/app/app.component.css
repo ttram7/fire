@@ -4,7 +4,7 @@
 
 header {
   display: block;
-  height: 120px;
+  min-height: 120px;
   padding: var(--content-padding);
   box-shadow: 0px 5px 25px var(--shadow-color);
 }
@@ -13,12 +13,26 @@ header {
   padding: var(--content-padding);
 }
 
-.brand-name {
-  background-color: rgb(232, 195, 245);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.header-container {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas: "logo . nav";
+}
+
+.brand-logo {
+  color: var(--accent-color);
+  padding-top: 10px;
+}
+
+.fire-logo {
+  grid-area: logo;
+  justify-self: start;
+}
+
+.nav-bar {
+  grid-area: nav;
+  justify-self: end;
 }
 
 a {
