@@ -7,17 +7,32 @@
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
 }
+
+/* NOTE: move these to Figma ASAP; 
+colors obtained from US dollar bill */
+
+/* COLOR PALETTE 5/9/24 from USD:
+purple: 151, 135, 146
+gray: 145, 137, 135
+green: 109, 121, 100
+rich green: 49, 84, 63
+counterfeit check yellow: 232, 210, 156
+ink: 61, 49, 42
+green background: 240, 230, 213 */
+
 :root {
-  --primary-color: #605DC8;
-  --secondary-color: #8B89E6;
-  --accent-color: #e8e7fa;
-  --shadow-color: #E8E8E8;
+  --primary-color: rgb(109, 121, 100);
+  --secondary-color: rgb(49, 84, 63);
+  --accent-color: rgb(240, 230, 213);
+  --shadow-color: rgb(151, 135, 146);
+  --button-color: rgb(145, 137, 135);
+  --ink-color: rgb(61, 49, 42);
 }
 
 button.primary {
   padding: 10px;
   border: solid 1px var(--primary-color);
   background: var(--primary-color);
-  color: white;
+  color: var(--button-color);
   border-radius: 8px;
 }
