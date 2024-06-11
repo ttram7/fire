@@ -1,7 +1,7 @@
 import { Component, Input, inject } from '@angular/core';
 import { RouterLink, RouterModule } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
-import { HousingService } from '../../housing.service';
+import { HousingService } from '../../services/housing.service';
 import { HousingLocation } from '../../housinglocation';
 import { References } from '../../references';
 import { ResearchReferences } from '../../researchreferences';
