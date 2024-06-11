@@ -16,7 +16,7 @@ import { ActivatedRoute } from '@angular/router';
     </p>
   </main>
   `,
-  styleUrl: '../app.component.css'
+  styleUrl: '../../app.component.css'
 })
 
 export class AboutComponent {

@@ -1,10 +1,10 @@
 import { Component, Input, inject } from '@angular/core';
 import { RouterLink, RouterModule } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
-import { HousingService } from '../housing.service';
-import { HousingLocation } from '../housinglocation';
-import { References } from '../references';
-import { ResearchReferences } from '../researchreferences';
+import { HousingService } from '../../housing.service';
+import { HousingLocation } from '../../housinglocation';
+import { References } from '../../references';
+import { ResearchReferences } from '../../researchreferences';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @Component({
