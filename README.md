@@ -13,6 +13,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+## Dependencies
+- npm install -g @angular/cli
+
+
 ## Database
 
 This code repository features a `db.json` file which has some starter code. As we migrate to MongoDB, this will change. To run the FIRE application locally, start the database with command `json-server db.json` or `npx json-server --watch db.json` if you do not have packages installed globally.
