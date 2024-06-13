@@ -1,4 +1,7 @@
 # FIRE Application
+
+## Description
+
 This application is being developed for the FIRE Movement (Financial Independence, Retire Early). FIRE is a movement for people who want to retire earlier than the traditional age of 65, by saving money through heavily investing.
 
 End users for this FIRE application include:
@@ -14,8 +17,21 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Dependencies
+
+- npm install
 - npm install -g @angular/cli
 
+## File Structure
+
+- `src/` contains the Angular application client-side files
+- `server/` contains the Express App
+
+## Installation
+
+1. Open up your editor of choice and run an `npm install` and `npm install -g @angular/cli`.
+2. Run `ng serve` in your terminal.
+3. Run `json-server db.json` in your terminal.
+4. Navigate to `localhost:4200`.
 
 ## Database
 
@@ -27,7 +43,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. 
+The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
