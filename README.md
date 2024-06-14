@@ -20,8 +20,11 @@ End users for this FIRE application include:
 
 1. Open up your editor of choice and run an `npm install`.
 2. Run `npm install -g @angular/cli` to install the Angular CLI package.
-2. Run `ng serve` in a new integrated terminal window.
-3. Run `json-server db.json` in a new integrated terminal window.
+3. Run `ng serve` in a new integrated terminal window.
+4. Run `json-server db.json` in a new integrated terminal window.
+  This will run the temporary DB file db.json
+5. Run `node server/server.js` in a new integrated terminal window.
+  This will start the connection to the DB fire_db. (Not integrated on FE, but can be tested via postman.)
 4. Navigate to `localhost:4200`.
 
 ## Options if not already installed
