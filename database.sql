@@ -1,3 +1,5 @@
+--Database should be called fire_db
+
 -- Create the table
 CREATE TABLE locations (
     id SERIAL PRIMARY KEY,
