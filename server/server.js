@@ -1,22 +1,9 @@
-// import { app } from './express-setup';
-
-
-// function run(): void {
-//   const port = process.env['PORT'] || 4000;
-
-//   // Start up the Node server
-//   const server = app();
-//   server.listen(port, () => {
-//     console.log(`Node Express server listening on http://localhost:${port}`);
-//   });
-// }
-
-// run();
-
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const axios = require('axios');
 const { Pool } = require('pg');
 
+//install express and set the port
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 4000;
@@ -32,7 +19,7 @@ const pool = new Pool({
   port: 5432,
 });
 
-// Test route for 
+// Route for access to the DB data
 app.get('/api/test', async (req, res) => {
   try {
     const query = 'SELECT * FROM locations';
@@ -40,6 +27,16 @@ app.get('/api/test', async (req, res) => {
     res.json(result.rows);
   } catch (err) {
     res.status(500).json({ error: err.message });
+  }
+});
+
+// Route to fetch data from OpenDataSoft API
+app.get('/api/data', async (req, res) => {
+  try {
+    const response = await axios.get('https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/georef-united-states-of-america-place/records?limit=20');
+    res.json(response.data);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
 });
 
