@@ -25,13 +25,14 @@ const port = process.env.PORT || 4000;
 app.use(bodyParser.json());
 app.use(cors());
 
+//Pool creation for access to the DB
 const pool = new Pool({
   host: 'localhost',
   database: 'fire_db',
   port: 5432,
 });
 
-// Test route
+// Test route for 
 app.get('/api/test', async (req, res) => {
   try {
     const query = 'SELECT * FROM locations';
